@@ -108,7 +108,7 @@ export default function SocialLinks({
                 Sorteo Bikers
               </h4>
               <p className="text-sm text-[#8f876b] leading-relaxed">
-                La plataforma de sorteos más confiable y transparente de Colombia.
+                
               </p>
             </div>
             
