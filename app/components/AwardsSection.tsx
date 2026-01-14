@@ -40,8 +40,17 @@ export default function AwardsSection({
           <AwardCard
             award={award}
             onSelect={() => onAwardSelect?.(award)}
-            onBuy={() => onAwardBuy?.(award)}
           />
+          {onAwardBuy && (
+            <div className="mt-6 text-center">
+              <button
+                onClick={() => onAwardBuy(award)}
+                className="px-6 py-3 bg-[#d4af37] text-black rounded-lg font-medium hover:opacity-90 transition"
+              >
+                Comprar Ticket
+              </button>
+            </div>
+          )}
         </div>
 
         {/* Trust Indicators - Clear benefits */}
